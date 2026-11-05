@@ -1,0 +1,13 @@
+{
+  "name": "books-hub",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "install:all": "npm ci --prefix backend && npm ci --prefix frontend",
+    "build": "npm run build --prefix frontend",
+    "migrate:supabase": "npm run migrate:supabase --prefix backend"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
